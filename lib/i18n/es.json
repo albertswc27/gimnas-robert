@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "El Gimnasio",
+    "services": "Servicios",
+    "prices": "Precios",
+    "schedule": "Horarios",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Gimnàs Robert",
+    "subtitle": "Centro Deportivo en Parets del Vallès",
+    "description": "Más de 30 años de experiencia en fitness, musculación y artes marciales",
+    "cta_primary": "Prueba una clase",
+    "cta_secondary": "Ver horarios"
+  },
+  "about": {
+    "title": "El Gimnasio",
+    "history_title": "Nuestra historia",
+    "history_text": "El Gimnàs Robert abrió sus puertas en 1989 en un local de 200 m². En 1992, coincidiendo con las Olimpiadas de Barcelona, nos trasladamos a nuestra ubicación actual.",
+    "facilities_title": "Instalaciones",
+    "floor_0": "Planta baja: tatami para artes marciales, vestuarios y recepción",
+    "floor_1": "Primera planta: sala de musculación para piernas y zona de cardio",
+    "floor_2": "Segunda planta: sala de fitness con maquinaria de alta gama",
+    "features": "Nuestras instalaciones se caracterizan por buena ventilación, luminosidad natural y vistas a la montaña de Gallecs"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Todo lo que necesitas para alcanzar tus objetivos",
+    "training_rooms": {
+      "title": "Salas de Entrenamiento Equipadas",
+      "items": [
+        "Sala de musculación con máquinas de alta gama",
+        "Zona de cardio con cintas de correr, bicicletas y elípticas",
+        "Sala de fitness y tatami para artes marciales"
+      ]
+    },
+    "directed_activities": {
+      "title": "Actividades Dirigidas",
+      "items": [
+        "Sesiones de fitness, tonificación y musculación",
+        "Clases de artes marciales (kickboxing)",
+        "Entrenamientos de calistenia y fuerza adaptados"
+      ]
+    },
+    "personal_training": {
+      "title": "Entrenamiento Personalizado",
+      "items": [
+        "Asesoramiento individual para alcanzar objetivos",
+        "Planes de entrenamiento adaptados",
+        "Seguimiento de la evolución"
+      ]
+    },
+    "adapted_facilities": {
+      "title": "Instalaciones Adaptadas",
+      "items": [
+        "Zonas exteriores para entrenar al aire libre",
+        "Vestuarios con duchas y servicio de taquillas",
+        "Ambiente ventilado y luminoso"
+      ]
+    }
+  },
+  "schedule": {
+    "title": "Horarios",
+    "sala_title": "Sala de Musculación y Cardio",
+    "weekdays": "Lunes a Viernes",
+    "saturday": "Sábado",
+    "juniors_title": "Boxeo/Kickboxing Juniors",
+    "seniors_title": "Boxeo/Kickboxing Seniors",
+    "days": "Días"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Ven a conocernos o contáctanos para más información",
+    "form_title": "Envíanos un mensaje",
+    "name": "Nombre y apellidos",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "privacy": "He leído y acepto la política de privacidad",
+    "marketing": "Acepto recibir información comercial",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado correctamente",
+    "error": "Error al enviar el mensaje",
+    "visit_us": "Visítanos",
+    "call_us": "Llámanos",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "about": "Sobre nosotros",
+    "about_text": "Gimnàs Robert, más de 30 años ofreciendo los mejores servicios de entrenamiento en Parets del Vallès.",
+    "quick_links": "Enlaces rápidos",
+    "legal": "Legal",
+    "legal_notice": "Aviso legal",
+    "privacy": "Política de privacidad",
+    "accessibility": "Accesibilidad",
+    "sitemap": "Mapa web",
+    "rights": "Todos los derechos reservados"
+  },
+  "prices": {
+    "title": "Precios",
+    "subtitle": "Elige el plan que mejor se adapte a tus necesidades",
+    "monthly": "Mensual",
+    "quarterly": "Trimestral",
+    "annual": "Anual",
+    "basic": {
+      "name": "Básico",
+      "description": "Acceso a la sala de musculación y cardio",
+      "features": [
+        "Sala de musculación completa",
+        "Zona de cardio",
+        "Vestuarios con duchas",
+        "Horario de apertura estándar"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "description": "Todo incluido: sala + actividades dirigidas",
+      "features": [
+        "Todo el contenido del plan Básico",
+        "Actividades dirigidas",
+        "Clases de kickboxing",
+        "Entrenamiento personalizado inicial",
+        "Acceso prioritario en horas punta"
+      ]
+    },
+    "trial": {
+      "name": "Clase de prueba",
+      "description": "Prueba el gimnasio durante una semana",
+      "features": [
+        "Acceso completo durante 7 días",
+        "Sesión de entrenamiento personalizado",
+        "Evaluación física inicial",
+        "Sin compromiso"
+      ]
+    },
+    "contact_info": "Para más información sobre precios y promociones, contáctanos directamente.",
+    "cta": "Empieza hoy"
+  },
+  "whatsapp_button": "Contacta por WhatsApp"
+}

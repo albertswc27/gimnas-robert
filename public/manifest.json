@@ -1,0 +1,26 @@
+{
+  "name": "Gimnàs Robert - Centre Esportiu",
+  "short_name": "Gimnàs Robert",
+  "description": "Més de 30 anys d'experiència en fitness, musculació i arts marcials a Parets del Vallès",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff6b35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["health", "fitness", "sports"],
+  "lang": "ca",
+  "scope": "/"
+}

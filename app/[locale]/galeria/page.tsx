@@ -1,0 +1,244 @@
+"use client"
+
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { WhatsAppButton } from "@/components/whatsapp-button"
+import { getTranslations, type Locale } from "@/lib/i18n"
+import Image from "next/image"
+import { useState, use } from "react"
+import { Button } from "@/components/ui/button"
+
+export default function GalleryPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = use(params)
+  const t = getTranslations(locale)
+  const [filter, setFilter] = useState<string>("all")
+
+  const galleryImages = [
+    // Instalaciones del Gimnasio - Sala Principal
+    { 
+      id: 1, 
+      src: "/images/gallery/sala-musculacion-gimnas-robert-maquinas-pesas-barras-entrenamiento.avif", 
+      alt: locale === "ca" ? "Sala de musculació amb màquines, peses i barres d'entrenament" : "Sala de musculación con máquinas, pesas y barras de entrenamiento", 
+      category: "musculacion" 
+    },
+    { 
+      id: 2, 
+      src: "/images/gallery/vista-panoramica-gimnasio-maquinas-musculacion-zona-pesas-iluminacion.avif", 
+      alt: locale === "ca" ? "Vista panoràmica del gimnàs amb màquines i zona de peses" : "Vista panorámica del gimnasio con máquinas y zona de pesas", 
+      category: "musculacion" 
+    },
+    { 
+      id: 3, 
+      src: "/images/gallery/zona-entrenamiento-funcional-pesas-libres-mancuernas-gimnas-robert.avif", 
+      alt: locale === "ca" ? "Zona d'entrenament funcional amb peses lliures i mancuernes" : "Zona de entrenamiento funcional con pesas libres y mancuernas", 
+      category: "musculacion" 
+    },
+    { 
+      id: 4, 
+      src: "/images/gallery/grupo-usuarios-entrenando-sala-principal-gimnas-robert-ambiente-activo.avif", 
+      alt: locale === "ca" ? "Grup d'usuaris entrenant a la sala principal" : "Grupo de usuarios entrenando en la sala principal", 
+      category: "musculacion" 
+    },
+
+    // Zona de Cardio
+    { 
+      id: 5, 
+      src: "/images/gallery/area-fitness-gimnas-robert-bicicletas-estaticas-cintas-correr-moderno.avif", 
+      alt: locale === "ca" ? "Àrea de fitness amb bicicletes estàtiques i cintes de córrer" : "Área de fitness con bicicletas estáticas y cintas de correr", 
+      category: "cardio" 
+    },
+    { 
+      id: 6, 
+      src: "/images/gallery/zona-cardio-gimnas-robert-elipticas-bicicletas-televisores-aerobicos.avif", 
+      alt: locale === "ca" ? "Zona de cardio amb el·líptiques, bicicletes i televisors" : "Zona de cardio con elípticas, bicicletas y televisores", 
+      category: "cardio" 
+    },
+    { 
+      id: 7, 
+      src: "/images/gallery/sala-cardio-gimnas-robert-equipamiento-aerobico-fitness.avif", 
+      alt: locale === "ca" ? "Sala de cardio amb equipament aeròbic" : "Sala de cardio con equipamiento aeróbico", 
+      category: "cardio" 
+    },
+
+    // Boxeo y Artes Marciales
+    { 
+      id: 8, 
+      src: "/images/gallery/sala-boxeo-gimnas-robert-sacos-golpeo-tatami-kickboxing-artes-marciales.avif", 
+      alt: locale === "ca" ? "Sala de boxa amb sacs de colpeig, tatami i kickboxing" : "Sala de boxeo con sacos de golpeo, tatami y kickboxing", 
+      category: "boxeo" 
+    },
+    { 
+      id: 9, 
+      src: "/images/gallery/entrenadores-alumnos-boxeo-gimnas-robert-ambiente-deportivo-energia.avif", 
+      alt: locale === "ca" ? "Entrenadors i alumnes practicant boxa" : "Entrenadores y alumnos practicando boxeo", 
+      category: "boxeo" 
+    },
+    { 
+      id: 10, 
+      src: "/images/gallery/entrenamiento-boxeo-guantes-saco-gimnas-robert-tecnica-profesional.avif", 
+      alt: locale === "ca" ? "Entrenament de boxa amb guants i sac" : "Entrenamiento de boxeo con guantes y saco", 
+      category: "boxeo" 
+    },
+    { 
+      id: 11, 
+      src: "/images/gallery/tatami-artes-marciales-gimnas-robert-suelo-entrenamiento.avif", 
+      alt: locale === "ca" ? "Tatami per a arts marcials" : "Tatami para artes marciales", 
+      category: "boxeo" 
+    },
+    { 
+      id: 12, 
+      src: "/images/gallery/tatami-entrenamiento-artes-marciales-gimnas-robert-superficie.avif", 
+      alt: locale === "ca" ? "Superfície de tatami per a entrenament" : "Superficie de tatami para entrenamiento", 
+      category: "boxeo" 
+    },
+    { 
+      id: 13, 
+      src: "/images/gallery/equipo-boxeo-gimnas-robert-material-entrenamiento-combate.avif", 
+      alt: locale === "ca" ? "Equipament de boxa i material d'entrenament" : "Equipo de boxeo y material de entrenamiento", 
+      category: "boxeo" 
+    },
+
+    // Exterior y Fachada
+    { 
+      id: 14, 
+      src: "/images/gallery/fachada-principal-gimnas-robert-cartel-identificativo-acceso-calle.avif", 
+      alt: locale === "ca" ? "Façana principal del Gimnàs Robert" : "Fachada principal del Gimnàs Robert", 
+      category: "exterior" 
+    },
+
+    // Historia de Robert (Propietario)
+    { 
+      id: 15, 
+      src: "/images/gallery/robert-concurso-culturismo-competicion-gimnas-robert-propietario.avif", 
+      alt: locale === "ca" ? "Robert en concurs de culturisme" : "Robert en concurso de culturismo", 
+      category: "historia" 
+    },
+    { 
+      id: 16, 
+      src: "/images/gallery/robert-culturismo-competencia-musculacion-gimnas-robert-fundador.avif", 
+      alt: locale === "ca" ? "Robert en competència de culturisme" : "Robert en competencia de culturismo", 
+      category: "historia" 
+    },
+    { 
+      id: 17, 
+      src: "/images/gallery/robert-campeonato-culturismo-victoria-gimnas-robert-logros.avif", 
+      alt: locale === "ca" ? "Robert després d'un campionat de culturisme" : "Robert después de un campeonato de culturismo", 
+      category: "historia" 
+    },
+    { 
+      id: 18, 
+      src: "/images/gallery/robert-carrera-atletismo-deporte-gimnas-robert-entrenador.avif", 
+      alt: locale === "ca" ? "Robert en una carrera d'atletisme" : "Robert en una carrera de atletismo", 
+      category: "historia" 
+    },
+    { 
+      id: 19, 
+      src: "/images/gallery/dorsales-carreras-robert-atletismo-competiciones-gimnas-robert.avif", 
+      alt: locale === "ca" ? "Dorsals de carreres de Robert" : "Dorsales de carreras de Robert", 
+      category: "historia" 
+    },
+    { 
+      id: 20, 
+      src: "/images/gallery/robert-futbol-deporte-juventud-gimnas-robert-historia-deportiva.avif", 
+      alt: locale === "ca" ? "Robert quan jugava a futbol" : "Robert cuando jugaba fútbol", 
+      category: "historia" 
+    },
+    { 
+      id: 21, 
+      src: "/images/gallery/robert-futbolista-pasado-deportivo-gimnas-robert-trayectoria.avif", 
+      alt: locale === "ca" ? "Robert futbolista en el seu passat esportiu" : "Robert futbolista en su pasado deportivo", 
+      category: "historia" 
+    },
+    { 
+      id: 22, 
+      src: "/images/gallery/robert-moto-motocicleta-aficion-gimnas-robert-propietario.avif", 
+      alt: locale === "ca" ? "Robert amb la seva moto" : "Robert con su moto", 
+      category: "historia" 
+    },
+    { 
+      id: 23, 
+      src: "/images/gallery/robert-motociclismo-pasion-motor-gimnas-robert-dueno.avif", 
+      alt: locale === "ca" ? "Robert i la seva passió pel motociclisme" : "Robert y su pasión por el motociclismo", 
+      category: "historia" 
+    },
+    { 
+      id: 24, 
+      src: "/images/gallery/robert-moto-aventura-deportes-motor-gimnas-robert-fundador.avif", 
+      alt: locale === "ca" ? "Robert en aventura amb moto" : "Robert en aventura con moto", 
+      category: "historia" 
+    },
+  ]
+
+  const filteredImages = filter === "all" ? galleryImages : galleryImages.filter((img) => img.category === filter)
+
+  const categories = [
+    { id: "all", label: locale === "ca" ? "Totes" : "Todas" },
+    { id: "musculacion", label: locale === "ca" ? "Musculació" : "Musculación" },
+    { id: "cardio", label: locale === "ca" ? "Cardio" : "Cardio" },
+    { id: "boxeo", label: locale === "ca" ? "Boxa" : "Boxeo" },
+    { id: "exterior", label: locale === "ca" ? "Exterior" : "Exterior" },
+    { id: "historia", label: locale === "ca" ? "Història de Robert" : "Historia de Robert" },
+  ]
+
+  return (
+    <>
+      <Header locale={locale} translations={t} />
+      <main>
+        {/* Hero Section */}
+        <section className="relative py-20 bg-neutral text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t.nav.gallery}</h1>
+              <p className="text-xl text-white/80 leading-relaxed">
+                {locale === "ca"
+                  ? "Descobreix les nostres instal·lacions i l'ambient del gimnàs."
+                  : "Descubre nuestras instalaciones y el ambiente del gimnasio."}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Gallery Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            {/* Filter Buttons */}
+            <div className="flex flex-wrap gap-3 justify-center mb-12">
+              {categories.map((category) => (
+                <Button
+                  key={category.id}
+                  onClick={() => setFilter(category.id)}
+                  variant={filter === category.id ? "default" : "outline"}
+                  className={filter === category.id ? "bg-primary hover:bg-primary/90" : ""}
+                >
+                  {category.label}
+                </Button>
+              ))}
+            </div>
+
+            {/* Gallery Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredImages.map((image) => (
+                <div key={image.id} className="relative h-64 rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+                  <Image
+                    src={image.src || "/placeholder.svg"}
+                    alt={image.alt}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-end">
+                    <p className="text-white font-semibold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      {image.alt}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer locale={locale} translations={t} />
+      <WhatsAppButton label={t.whatsapp_button} />
+    </>
+  )
+}

@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Inici",
+    "about": "El Gimnàs",
+    "services": "Serveis",
+    "prices": "Preus",
+    "schedule": "Horaris",
+    "gallery": "Galeria",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "title": "Gimnàs Robert",
+    "subtitle": "Centre Esportiu a Parets del Vallès",
+    "description": "Més de 30 anys d'experiència en fitness, musculació i arts marcials",
+    "cta_primary": "Prova una classe",
+    "cta_secondary": "Veure horaris"
+  },
+  "about": {
+    "title": "El Gimnàs",
+    "history_title": "La nostra història",
+    "history_text": "El Gimnàs Robert va obrir les seves portes el 1989 en un local de 200 m². El 1992, coincidint amb les Olimpíades de Barcelona, ens vam traslladar a la nostra ubicació actual.",
+    "facilities_title": "Instal·lacions",
+    "floor_0": "Planta baixa: tatami per a arts marcials, vestuaris i recepció",
+    "floor_1": "Primera planta: sala de musculació per a cames i zona de cardio",
+    "floor_2": "Segona planta: sala de fitness amb maquinària d'alta gamma",
+    "features": "Les nostres instal·lacions es caracteritzen per bona ventilació, lluminositat natural i vistes a la muntanya de Gallecs"
+  },
+  "services": {
+    "title": "Serveis",
+    "subtitle": "Tot el que necessites per assolir els teus objectius",
+    "training_rooms": {
+      "title": "Sales d'Entrenament Equipades",
+      "items": [
+        "Sala de musculació amb màquines d'alta gamma",
+        "Zona de cardio amb cintes de córrer, bicicletes i el·líptiques",
+        "Sala de fitness i tatami per a arts marcials"
+      ]
+    },
+    "directed_activities": {
+      "title": "Activitats Dirigides",
+      "items": [
+        "Sessions de fitness, tonificació i musculació",
+        "Classes d'arts marcials (kickboxing)",
+        "Entrenaments de calistènia i força adaptats"
+      ]
+    },
+    "personal_training": {
+      "title": "Entrenament Personalitzat",
+      "items": [
+        "Assessorament individual per assolir objectius",
+        "Plans d'entrenament adaptats",
+        "Seguiment de l'evolució"
+      ]
+    },
+    "adapted_facilities": {
+      "title": "Instal·lacions Adaptades",
+      "items": [
+        "Zones exteriors per entrenar a l'aire lliure",
+        "Vestuaris amb dutxes i servei de taquilles",
+        "Ambient ventilat i lluminós"
+      ]
+    }
+  },
+  "schedule": {
+    "title": "Horaris",
+    "sala_title": "Sala de Musculació i Cardio",
+    "weekdays": "Dilluns a Divendres",
+    "saturday": "Dissabte",
+    "juniors_title": "Boxa/Kickboxing Juniors",
+    "seniors_title": "Boxa/Kickboxing Seniors",
+    "days": "Dies"
+  },
+  "contact": {
+    "title": "Contacte",
+    "subtitle": "Vine a conèixer-nos o contacta'ns per més informació",
+    "form_title": "Envia'ns un missatge",
+    "name": "Nom i cognoms",
+    "phone": "Telèfon",
+    "email": "Correu electrònic",
+    "message": "Missatge",
+    "privacy": "He llegit i accepto la política de privacitat",
+    "marketing": "Accepto rebre informació comercial",
+    "submit": "Enviar",
+    "sending": "Enviant...",
+    "success": "Missatge enviat correctament",
+    "error": "Error en enviar el missatge",
+    "visit_us": "Visita'ns",
+    "call_us": "Truca'ns",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "about": "Sobre nosaltres",
+    "about_text": "Gimnàs Robert, més de 30 anys oferint els millors serveis d'entrenament a Parets del Vallès.",
+    "quick_links": "Enllaços ràpids",
+    "legal": "Legal",
+    "legal_notice": "Avís legal",
+    "privacy": "Política de privacitat",
+    "accessibility": "Accessibilitat",
+    "sitemap": "Mapa web",
+    "rights": "Tots els drets reservats"
+  },
+  "prices": {
+    "title": "Preus",
+    "subtitle": "Escull el pla que millor s'adapti a les teves necessitats",
+    "monthly": "Mensual",
+    "quarterly": "Trimestral",
+    "annual": "Anual",
+    "basic": {
+      "name": "Bàsic",
+      "description": "Accés a la sala de musculació i cardio",
+      "features": [
+        "Sala de musculació completa",
+        "Zona de cardio",
+        "Vestuaris amb dutxes",
+        "Horari d'obertura estàndard"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "description": "Tot inclòs: sala + activitats dirigides",
+      "features": [
+        "Tot el contingut del pla Bàsic",
+        "Activitats dirigides",
+        "Classes de kickboxing",
+        "Entrenament personalitzat inicial",
+        "Accés prioritari en hores punta"
+      ]
+    },
+    "trial": {
+      "name": "Classe de prova",
+      "description": "Prova el gimnàs durant una setmana",
+      "features": [
+        "Accés complet durant 7 dies",
+        "Sessió d'entrenament personalitzat",
+        "Avaluació física inicial",
+        "Sense compromís"
+      ]
+    },
+    "contact_info": "Per a més informació sobre preus i promocions, contacta'ns directament.",
+    "cta": "Comença avui"
+  },
+  "whatsapp_button": "Contacta per WhatsApp"
+}
