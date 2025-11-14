@@ -45,11 +45,11 @@ export default function HomePage({ params }: { params: Promise<{ locale: Locale 
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-secondary">
+        <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-neutral">{t.services.title}</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">{t.services.subtitle}</p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neutral">{t.services.title}</h2>
+              <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">{t.services.subtitle}</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -89,8 +89,8 @@ export default function HomePage({ params }: { params: Promise<{ locale: Locale 
         <section className="py-20 bg-neutral text-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">{t.schedule.title}</h2>
-              <p className="text-xl text-white/70">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.schedule.title}</h2>
+              <p className="text-base md:text-lg lg:text-xl text-white/70">
                 {locale === "ca" ? "Consulta els nostres horaris" : "Consulta nuestros horarios"}
               </p>
             </div>
@@ -147,8 +147,8 @@ export default function HomePage({ params }: { params: Promise<{ locale: Locale 
         {/* Contact CTA */}
         <section className="py-20 bg-primary text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-6">{locale === "ca" ? "Vine a conèixer-nos" : "Ven a conocernos"}</h2>
-            <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{locale === "ca" ? "Vine a conèixer-nos" : "Ven a conocernos"}</h2>
+            <p className="text-base md:text-xl mb-8 text-white/90 max-w-2xl mx-auto">
               {locale === "ca"
                 ? "Estem a Parets del Vallès. Contacta amb nosaltres per més informació o vine a fer una visita."
                 : "Estamos en Parets del Vallès. Contáctanos para más información o ven a hacer una visita."}

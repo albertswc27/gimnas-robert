@@ -31,9 +31,9 @@ export function Hero({ locale, translations }: HeroProps) {
       <div className="container mx-auto px-4 z-10 pt-20">
         <div className="max-w-3xl">
           <div className="animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">{t.title}</h1>
-            <p className="text-2xl md:text-3xl text-white/90 mb-4 font-semibold">{t.subtitle}</p>
-            <p className="text-lg md:text-xl text-white/70 mb-8 leading-relaxed">{t.description}</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">{t.title}</h1>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 mb-4 font-semibold">{t.subtitle}</p>
+            <p className="text-base md:text-lg lg:text-xl text-white/70 mb-8 leading-relaxed">{t.description}</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>

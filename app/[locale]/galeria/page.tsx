@@ -24,39 +24,39 @@ export default function GalleryPage({ params }: { params: Promise<{ locale: Loca
     { 
       id: 2, 
       src: "/images/gallery/vista-panoramica-gimnasio-maquinas-musculacion-zona-pesas-iluminacion.avif", 
-      alt: locale === "ca" ? "Vista panoràmica del gimnàs amb màquines i zona de peses" : "Vista panorámica del gimnasio con máquinas y zona de pesas", 
+      alt: locale === "ca" ? "Sala de musculació amb màquines, peses i barres d'entrenament" : "Sala de musculación con máquinas, pesas y barras de entrenamiento", 
       category: "musculacion" 
     },
     { 
       id: 3, 
       src: "/images/gallery/zona-entrenamiento-funcional-pesas-libres-mancuernas-gimnas-robert.avif", 
-      alt: locale === "ca" ? "Zona d'entrenament funcional amb peses lliures i mancuernes" : "Zona de entrenamiento funcional con pesas libres y mancuernas", 
+      alt: locale === "ca" ? "Sala de musculació amb màquines, peses i barres d'entrenament" : "Sala de musculación con máquinas, pesas y barras de entrenamiento", 
       category: "musculacion" 
     },
     { 
       id: 4, 
       src: "/images/gallery/grupo-usuarios-entrenando-sala-principal-gimnas-robert-ambiente-activo.avif", 
-      alt: locale === "ca" ? "Grup d'usuaris entrenant a la sala principal" : "Grupo de usuarios entrenando en la sala principal", 
-      category: "musculacion" 
+      alt: locale === "ca" ? "Robert en concurs de culturisme" : "Robert en concurso de culturismo", 
+      category: "historia" 
     },
 
     // Zona de Cardio
     { 
       id: 5, 
       src: "/images/gallery/area-fitness-gimnas-robert-bicicletas-estaticas-cintas-correr-moderno.avif", 
-      alt: locale === "ca" ? "Àrea de fitness amb bicicletes estàtiques i cintes de córrer" : "Área de fitness con bicicletas estáticas y cintas de correr", 
-      category: "cardio" 
+      alt: locale === "ca" ? "Gimnàs des de fora" : "Gimnasio desde fuera", 
+      category: "exterior" 
     },
     { 
       id: 6, 
       src: "/images/gallery/zona-cardio-gimnas-robert-elipticas-bicicletas-televisores-aerobicos.avif", 
-      alt: locale === "ca" ? "Zona de cardio amb el·líptiques, bicicletes i televisors" : "Zona de cardio con elípticas, bicicletas y televisores", 
-      category: "cardio" 
+      alt: locale === "ca" ? "Zona exterior del gimnàs" : "Zona exterior del gimnasio", 
+      category: "exterior" 
     },
     { 
       id: 7, 
       src: "/images/gallery/sala-cardio-gimnas-robert-equipamiento-aerobico-fitness.avif", 
-      alt: locale === "ca" ? "Sala de cardio amb equipament aeròbic" : "Sala de cardio con equipamiento aeróbico", 
+      alt: locale === "ca" ? "Màquines de cardio" : "Máquinas de cardio", 
       category: "cardio" 
     },
 
@@ -64,20 +64,20 @@ export default function GalleryPage({ params }: { params: Promise<{ locale: Loca
     { 
       id: 8, 
       src: "/images/gallery/sala-boxeo-gimnas-robert-sacos-golpeo-tatami-kickboxing-artes-marciales.avif", 
-      alt: locale === "ca" ? "Sala de boxa amb sacs de colpeig, tatami i kickboxing" : "Sala de boxeo con sacos de golpeo, tatami y kickboxing", 
-      category: "boxeo" 
+      alt: locale === "ca" ? "Sala de musculació amb màquines, peses i barres d'entrenament" : "Sala de musculación con máquinas, pesas y barras de entrenamiento", 
+      category: "musculacion" 
     },
     { 
       id: 9, 
       src: "/images/gallery/entrenadores-alumnos-boxeo-gimnas-robert-ambiente-deportivo-energia.avif", 
-      alt: locale === "ca" ? "Entrenadors i alumnes practicant boxa" : "Entrenadores y alumnos practicando boxeo", 
-      category: "boxeo" 
+      alt: locale === "ca" ? "Sala de musculació amb màquines, peses i barres d'entrenament" : "Sala de musculación con máquinas, pesas y barras de entrenamiento", 
+      category: "musculacion" 
     },
     { 
       id: 10, 
       src: "/images/gallery/entrenamiento-boxeo-guantes-saco-gimnas-robert-tecnica-profesional.avif", 
-      alt: locale === "ca" ? "Entrenament de boxa amb guants i sac" : "Entrenamiento de boxeo con guantes y saco", 
-      category: "boxeo" 
+      alt: locale === "ca" ? "Sala de musculació amb màquines, peses i barres d'entrenament" : "Sala de musculación con máquinas, pesas y barras de entrenamiento", 
+      category: "musculacion" 
     },
     { 
       id: 11, 
@@ -94,7 +94,7 @@ export default function GalleryPage({ params }: { params: Promise<{ locale: Loca
     { 
       id: 13, 
       src: "/images/gallery/equipo-boxeo-gimnas-robert-material-entrenamiento-combate.avif", 
-      alt: locale === "ca" ? "Equipament de boxa i material d'entrenament" : "Equipo de boxeo y material de entrenamiento", 
+      alt: locale === "ca" ? "Equip de boxa" : "Equipo de boxeo", 
       category: "boxeo" 
     },
 
@@ -102,15 +102,15 @@ export default function GalleryPage({ params }: { params: Promise<{ locale: Loca
     { 
       id: 14, 
       src: "/images/gallery/fachada-principal-gimnas-robert-cartel-identificativo-acceso-calle.avif", 
-      alt: locale === "ca" ? "Façana principal del Gimnàs Robert" : "Fachada principal del Gimnàs Robert", 
-      category: "exterior" 
+      alt: locale === "ca" ? "Robert jugant a futbol" : "Robert jugando a fútbol", 
+      category: "historia" 
     },
 
     // Historia de Robert (Propietario)
     { 
       id: 15, 
       src: "/images/gallery/robert-concurso-culturismo-competicion-gimnas-robert-propietario.avif", 
-      alt: locale === "ca" ? "Robert en concurs de culturisme" : "Robert en concurso de culturismo", 
+      alt: locale === "ca" ? "Robert concurs de culturisme" : "Robert concurso de culturismo", 
       category: "historia" 
     },
     { 
@@ -188,8 +188,8 @@ export default function GalleryPage({ params }: { params: Promise<{ locale: Loca
         <section className="relative py-20 bg-neutral text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t.nav.gallery}</h1>
-              <p className="text-xl text-white/80 leading-relaxed">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">{t.nav.gallery}</h1>
+              <p className="text-base md:text-lg lg:text-xl text-white/80 leading-relaxed">
                 {locale === "ca"
                   ? "Descobreix les nostres instal·lacions i l'ambient del gimnàs."
                   : "Descubre nuestras instalaciones y el ambiente del gimnasio."}
@@ -202,7 +202,7 @@ export default function GalleryPage({ params }: { params: Promise<{ locale: Loca
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             {/* Filter Buttons */}
-            <div className="flex flex-wrap gap-3 justify-center mb-12">
+            <div className="flex flex-wrap gap-2 md:gap-3 justify-center mb-8 md:mb-12 px-4">
               {categories.map((category) => (
                 <Button
                   key={category.id}

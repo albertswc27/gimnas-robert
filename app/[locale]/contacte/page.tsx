@@ -19,8 +19,8 @@ export default function ContactPage({ params }: { params: Promise<{ locale: Loca
         <section className="relative py-20 bg-neutral text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t.contact.title}</h1>
-              <p className="text-xl text-white/80 leading-relaxed">{t.contact.subtitle}</p>
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">{t.contact.title}</h1>
+              <p className="text-base md:text-lg lg:text-xl text-white/80 leading-relaxed">{t.contact.subtitle}</p>
             </div>
           </div>
         </section>

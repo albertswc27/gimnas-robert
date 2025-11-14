@@ -20,8 +20,8 @@ export default function ServicesPage({ params }: { params: Promise<{ locale: Loc
         <section className="relative py-20 bg-neutral text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t.services.title}</h1>
-              <p className="text-xl text-white/80 leading-relaxed">{t.services.subtitle}</p>
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">{t.services.title}</h1>
+              <p className="text-base md:text-lg lg:text-xl text-white/80 leading-relaxed">{t.services.subtitle}</p>
             </div>
           </div>
         </section>
@@ -58,7 +58,7 @@ export default function ServicesPage({ params }: { params: Promise<{ locale: Loc
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-neutral">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neutral">
                 {locale === "ca" ? "Per què triar-nos?" : "¿Por qué elegirnos?"}
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -127,8 +127,8 @@ export default function ServicesPage({ params }: { params: Promise<{ locale: Loc
         {/* CTA Section */}
         <section className="py-20 bg-primary text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-6">{locale === "ca" ? "Comença avui mateix" : "Empieza hoy mismo"}</h2>
-            <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{locale === "ca" ? "Comença avui mateix" : "Empieza hoy mismo"}</h2>
+            <p className="text-base md:text-xl mb-8 text-white/90 max-w-2xl mx-auto">
               {locale === "ca"
                 ? "Contacta amb nosaltres per més informació sobre els nostres serveis i tarifes."
                 : "Contáctanos para más información sobre nuestros servicios y tarifas."}

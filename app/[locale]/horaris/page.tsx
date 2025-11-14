@@ -21,8 +21,8 @@ export default function SchedulePage({ params }: { params: Promise<{ locale: Loc
         <section className="relative py-20 bg-neutral text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t.schedule.title}</h1>
-              <p className="text-xl text-white/80 leading-relaxed">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">{t.schedule.title}</h1>
+              <p className="text-base md:text-lg lg:text-xl text-white/80 leading-relaxed">
                 {locale === "ca"
                   ? "Consulta els nostres horaris i planifica el teu entrenament."
                   : "Consulta nuestros horarios y planifica tu entrenamiento."}
@@ -76,7 +76,7 @@ export default function SchedulePage({ params }: { params: Promise<{ locale: Loc
         {/* CTA Section */}
         <section className="py-20 bg-primary text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               {locale === "ca" ? "Tens alguna pregunta?" : "¿Tienes alguna pregunta?"}
             </h2>
             <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">

@@ -113,8 +113,8 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
         <section className="relative py-20 bg-neutral text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t.prices.title}</h1>
-              <p className="text-xl text-white/80 leading-relaxed">{t.prices.subtitle}</p>
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">{t.prices.title}</h1>
+              <p className="text-base md:text-lg lg:text-xl text-white/80 leading-relaxed">{t.prices.subtitle}</p>
               <div className="mt-6 inline-flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full">
                 <Users className="h-5 w-5 text-primary" />
                 <span className="text-primary font-semibold">
@@ -168,20 +168,20 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDEzNGgxMnYxMkgzNnptMjQgMGgxMnYxMkg2MHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                 {locale === "ca" 
                   ? "OFERTA ESPECIAL - Descompte per a aspirants a oposicions ISCP"
                   : "OFERTA ESPECIAL - Descuento para aspirantes a oposiciones ISCP"
                 }
               </h2>
               <div className="bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-xl p-6 mb-4">
-                <p className="text-xl mb-4 font-semibold">
+                <p className="text-lg md:text-xl mb-4 font-semibold">
                   {locale === "ca"
                     ? "Institut de Seguretat Pública de Catalunya"
                     : "Institut de Seguretat Pública de Catalunya"
                   }
                 </p>
-                <p className="text-lg mb-4">
+                <p className="text-base md:text-lg mb-4">
                   {locale === "ca"
                     ? "Si estàs preparant oposicions per a l'ISCP, tens un descompte especial!"
                     : "Si estás preparando oposiciones para el ISCP, ¡tienes un descuento especial!"
@@ -223,7 +223,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
                 </Button>
                 <Button asChild size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white/10">
                   <a href="tel:+34935624934">
-                    📞 {locale === "ca" ? "Truca'ns" : "Llámanos"}
+                    {locale === "ca" ? "Truca'ns" : "Llámanos"}
                   </a>
                 </Button>
               </div>
@@ -235,7 +235,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-neutral mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-neutral mb-4">
                 {locale === "ca" ? "Plans principals" : "Planes principales"}
               </h2>
               <p className="text-muted-foreground">
@@ -256,7 +256,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
                   )}
                   
                   <CardHeader className="text-center">
-                    <CardTitle className="text-2xl font-bold text-neutral">{plan.name}</CardTitle>
+                    <CardTitle className="text-xl md:text-2xl font-bold text-neutral">{plan.name}</CardTitle>
                     <CardDescription className="text-muted-foreground">{plan.description}</CardDescription>
                     
                     {/* Precios por género */}
@@ -266,7 +266,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
                           {locale === "ca" ? "Nois" : "Chicos"}
                         </div>
                         <div className="flex items-center justify-center gap-2">
-                          <span className="text-3xl font-bold text-red-700">{plan.priceChicos}</span>
+                          <span className="text-2xl md:text-3xl font-bold text-red-700">{plan.priceChicos}</span>
                           {plan.pricePerMonthChicos && (
                             <span className="text-sm text-red-600">({plan.pricePerMonthChicos}/{locale === "ca" ? "mes" : "mes"})</span>
                           )}
@@ -278,7 +278,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
                           {locale === "ca" ? "Noies" : "Chicas"}
                         </div>
                         <div className="flex items-center justify-center gap-2">
-                          <span className="text-3xl font-bold text-red-700">{plan.priceChicas}</span>
+                          <span className="text-2xl md:text-3xl font-bold text-red-700">{plan.priceChicas}</span>
                           {plan.pricePerMonthChicas && (
                             <span className="text-sm text-red-600">({plan.pricePerMonthChicas}/{locale === "ca" ? "mes" : "mes"})</span>
                           )}
@@ -316,7 +316,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-neutral mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-neutral mb-4">
                 {locale === "ca" ? "Plans de compromís llarg" : "Planes de compromiso largo"}
               </h2>
               <p className="text-muted-foreground">
@@ -344,7 +344,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
                         <div className="text-xs text-red-600 mb-1">
                           {locale === "ca" ? "Nois" : "Chicos"}
                         </div>
-                        <div className="text-2xl font-bold text-red-700">{plan.priceChicos}</div>
+                        <div className="text-xl md:text-2xl font-bold text-red-700">{plan.priceChicos}</div>
                         <div className="text-sm text-red-600">{plan.monthlyPriceChicos}/{locale === "ca" ? "mes" : "mes"}</div>
                       </div>
                       
@@ -352,7 +352,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
                         <div className="text-xs text-red-600 mb-1">
                           {locale === "ca" ? "Noies" : "Chicas"}
                         </div>
-                        <div className="text-2xl font-bold text-red-700">{plan.priceChicas}</div>
+                        <div className="text-xl md:text-2xl font-bold text-red-700">{plan.priceChicas}</div>
                         <div className="text-sm text-red-600">{plan.monthlyPriceChicas}/{locale === "ca" ? "mes" : "mes"}</div>
                       </div>
                     </div>
@@ -375,7 +375,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg max-w-4xl mx-auto text-center">
-              <h3 className="text-2xl font-bold text-neutral mb-4">
+              <h3 className="text-xl md:text-2xl font-bold text-neutral mb-4">
                 {locale === "ca" ? "Vols més informació?" : "¿Quieres más información?"}
               </h3>
               <p className="text-muted-foreground mb-6">
