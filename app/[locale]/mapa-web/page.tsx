@@ -23,7 +23,7 @@ export default function SitemapPage({ params }: { params: Promise<{ locale: Loca
       name: t.footer.privacy,
       href: `/${locale}/${locale === "ca" ? "politica-de-privacitat" : "politica-de-privacidad"}`,
     },
-    { name: t.footer.cookies, href: `/${locale}/${locale === "ca" ? "politica-de-cookies" : "politica-de-cookies"}` },
+    { name: locale === "ca" ? "Política de cookies" : "Política de cookies", href: `/${locale}/${locale === "ca" ? "politica-de-cookies" : "politica-de-cookies"}` },
     { name: t.footer.accessibility, href: `/${locale}/${locale === "ca" ? "accessibilitat" : "accesibilidad"}` },
   ]
 
