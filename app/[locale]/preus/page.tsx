@@ -14,7 +14,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
 
   // Precios para CHICOS (2025-2026-2027)
   const pricesChicos = {
-    primerMes: { price: "60€", description: locale === "ca" ? "mes inclòs" : "mes incluido" },
+    primerMes: { price: "60€", description: locale === "ca" ? "matrícula + mes inclòs" : "matrícula + mes incluido" },
     mensual: { price: "45€", description: locale === "ca" ? "per mes" : "por mes" },
     trimestral: { price: "126€", pricePerMonth: "42€", description: locale === "ca" ? "per mes" : "por mes" },
     semestral: { price: "228€", pricePerMonth: "38€", description: locale === "ca" ? "per mes" : "por mes" },
@@ -24,7 +24,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
 
   // Precios para CHICAS (2025-2026-2027)  
   const pricesChicas = {
-    primerMes: { price: "55€", description: locale === "ca" ? "mes inclòs" : "mes incluido" },
+    primerMes: { price: "55€", description: locale === "ca" ? "matrícula + mes inclòs" : "matrícula + mes incluido" },
     mensual: { price: "39€", description: locale === "ca" ? "per mes" : "por mes" },
     trimestral: { price: "110€", pricePerMonth: "36,6€", description: locale === "ca" ? "per mes" : "por mes" },
     semestral: { price: "175€", pricePerMonth: "29€", description: locale === "ca" ? "per mes" : "por mes" },
@@ -35,7 +35,7 @@ export default function PricesPage({ params }: { params: Promise<{ locale: Local
   const mainPlans = [
     {
       name: locale === "ca" ? "Primer Mes" : "Primer Mes",
-      description: locale === "ca" ? "Prova el gimnàs amb tarifa d'inici" : "Prueba el gimnasio con tarifa de inicio",
+      description: locale === "ca" ? "Primer mes tot inclòs amb matrícula i mensualitat" : "Primer mes todo incluido con matrícula y mensualidad",
       priceChicos: pricesChicos.primerMes.price,
       priceChicas: pricesChicas.primerMes.price,
       period: pricesChicos.primerMes.description,
