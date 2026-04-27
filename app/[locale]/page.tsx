@@ -104,7 +104,11 @@ export default function HomePage({ params }: { params: Promise<{ locale: Locale 
                   <p className="font-semibold text-white">
                     {SCHEDULE.sala.weekdays.open} - {SCHEDULE.sala.weekdays.close}
                   </p>
-                  <p className="text-sm mt-3">{t.schedule.weekend}</p>
+                  <p className="text-sm mt-3">{t.schedule.saturday}</p>
+                  <p className="font-semibold text-white">
+                    {SCHEDULE.sala.saturday.open} - {SCHEDULE.sala.saturday.close}
+                  </p>
+                  <p className="text-sm mt-3">{t.schedule.sunday}</p>
                   <p className="font-semibold text-white">{t.schedule.closed}</p>
                 </div>
               </div>

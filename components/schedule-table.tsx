@@ -51,7 +51,21 @@ export function ScheduleTable({ locale, translations }: ScheduleTableProps) {
                       <span className="font-semibold text-neutral">{t.sala_title}</span>
                     </div>
                   </td>
-                  <td className="px-6 py-4 text-muted-foreground">{t.weekend}</td>
+                  <td className="px-6 py-4 text-muted-foreground">{t.saturday}</td>
+                  <td className="px-6 py-4 font-medium text-neutral">
+                    {SCHEDULE.sala.saturday.open} - {SCHEDULE.sala.saturday.close}
+                  </td>
+                </tr>
+                <tr className="hover:bg-secondary transition-colors">
+                  <td className="px-6 py-4">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-primary/10 p-2 rounded-lg">
+                        <Clock className="h-5 w-5 text-primary" />
+                      </div>
+                      <span className="font-semibold text-neutral">{t.sala_title}</span>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-muted-foreground">{t.sunday}</td>
                   <td className="px-6 py-4 font-medium text-neutral">{t.closed}</td>
                 </tr>
                 <tr className="hover:bg-secondary transition-colors">
@@ -114,7 +128,13 @@ export function ScheduleTable({ locale, translations }: ScheduleTableProps) {
                     </p>
                   </div>
                   <div className="bg-secondary p-4 rounded-lg">
-                    <p className="text-sm text-muted-foreground mb-1">{t.weekend}</p>
+                    <p className="text-sm text-muted-foreground mb-1">{t.saturday}</p>
+                    <p className="text-lg font-semibold text-neutral">
+                      {SCHEDULE.sala.saturday.open} - {SCHEDULE.sala.saturday.close}
+                    </p>
+                  </div>
+                  <div className="bg-secondary p-4 rounded-lg">
+                    <p className="text-sm text-muted-foreground mb-1">{t.sunday}</p>
                     <p className="text-lg font-semibold text-neutral">{t.closed}</p>
                   </div>
                 </div>
