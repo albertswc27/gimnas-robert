@@ -67,7 +67,8 @@
     "title": "Horarios",
     "sala_title": "Sala de Musculación y Cardio",
     "weekdays": "Lunes a Viernes",
-    "saturday": "Sábado",
+    "weekend": "Fines de semana",
+    "closed": "Cerrado",
     "juniors_title": "Boxeo/Kickboxing Juniors",
     "seniors_title": "Boxeo/Kickboxing Seniors",
     "days": "Días"

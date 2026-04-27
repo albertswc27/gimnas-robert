@@ -67,7 +67,8 @@
     "title": "Horaris",
     "sala_title": "Sala de Musculació i Cardio",
     "weekdays": "Dilluns a Divendres",
-    "saturday": "Dissabte",
+    "weekend": "Caps de setmana",
+    "closed": "Tancat",
     "juniors_title": "Boxa/Kickboxing Juniors",
     "seniors_title": "Boxa/Kickboxing Seniors",
     "days": "Dies"

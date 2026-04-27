@@ -10,8 +10,7 @@ export const CONTACT = {
 
 export const SCHEDULE = {
   sala: {
-    weekdays: { open: "5:50", close: "22:10" },
-    saturday: { open: "7:00", close: "13:45" },
+    weekdays: { open: "5:00", close: "22:10" },
   },
   juniors: {
     days: ["Dilluns", "Dimarts", "Dijous"],

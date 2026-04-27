@@ -51,10 +51,8 @@ export function ScheduleTable({ locale, translations }: ScheduleTableProps) {
                       <span className="font-semibold text-neutral">{t.sala_title}</span>
                     </div>
                   </td>
-                  <td className="px-6 py-4 text-muted-foreground">{t.saturday}</td>
-                  <td className="px-6 py-4 font-medium text-neutral">
-                    {SCHEDULE.sala.saturday.open} - {SCHEDULE.sala.saturday.close}
-                  </td>
+                  <td className="px-6 py-4 text-muted-foreground">{t.weekend}</td>
+                  <td className="px-6 py-4 font-medium text-neutral">{t.closed}</td>
                 </tr>
                 <tr className="hover:bg-secondary transition-colors">
                   <td className="px-6 py-4">
@@ -116,10 +114,8 @@ export function ScheduleTable({ locale, translations }: ScheduleTableProps) {
                     </p>
                   </div>
                   <div className="bg-secondary p-4 rounded-lg">
-                    <p className="text-sm text-muted-foreground mb-1">{t.saturday}</p>
-                    <p className="text-lg font-semibold text-neutral">
-                      {SCHEDULE.sala.saturday.open} - {SCHEDULE.sala.saturday.close}
-                    </p>
+                    <p className="text-sm text-muted-foreground mb-1">{t.weekend}</p>
+                    <p className="text-lg font-semibold text-neutral">{t.closed}</p>
                   </div>
                 </div>
               </CardContent>
