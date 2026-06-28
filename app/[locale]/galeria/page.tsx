@@ -3,6 +3,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { Palmares } from "@/components/palmares"
 import { getTranslations, type Locale } from "@/lib/i18n"
 import Image from "next/image"
 import { useState, use } from "react"
@@ -197,6 +198,9 @@ export default function GalleryPage({ params }: { params: Promise<{ locale: Loca
             </div>
           </div>
         </section>
+
+        {/* Palmarés Section */}
+        <Palmares locale={locale} />
 
         {/* Gallery Section */}
         <section className="py-20 bg-white">

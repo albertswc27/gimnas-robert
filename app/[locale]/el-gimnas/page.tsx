@@ -1,8 +1,9 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { Palmares } from "@/components/palmares"
 import { getTranslations, type Locale } from "@/lib/i18n"
-import { Building2, Calendar, Eye, Dumbbell, Award, Mountain, Users, Heart, Trophy, Bike, Footprints } from "lucide-react"
+import { Building2, Calendar, Eye, Dumbbell, Award, Mountain, Users, Heart, Bike, Footprints } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -207,23 +208,7 @@ export default function AboutPage({ params }: { params: Promise<{ locale: Locale
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-white">
-                      <Trophy className="h-6 w-6 text-red-400" />
-                      {locale === "ca" ? "Culturisme" : "Culturismo"}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="text-white/90">
-                    <ul className="space-y-2 text-sm">
-                      <li>{locale === "ca" ? "2x Campió de Catalunya" : "2x Campeón de Cataluña"}</li>
-                      <li>{locale === "ca" ? "2x Campió de Barcelona" : "2x Campeón de Barcelona"}</li>
-                      <li>{locale === "ca" ? "Promeses Catalunya" : "Promesas Cataluña"}</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
+              <div className="grid md:grid-cols-3 gap-6">
                 <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2 text-white">
@@ -272,6 +257,9 @@ export default function AboutPage({ params }: { params: Promise<{ locale: Locale
             </div>
           </div>
         </section>
+
+        {/* Palmarés Section */}
+        <Palmares locale={locale} />
 
         {/* Timeline Section */}
         <section className="py-20 bg-secondary">

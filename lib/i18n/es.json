@@ -92,6 +92,18 @@
     "call_us": "Llámanos",
     "whatsapp": "WhatsApp"
   },
+  "palmares": {
+    "eyebrow": "Culturismo · IFBB",
+    "title": "Palmarés",
+    "subtitle": "La trayectoria competitiva de Robert, fundador del Gimnàs, sobre el escenario del culturismo.",
+    "stat_titles": "Títulos de campeón",
+    "stat_years": "Trayectoria",
+    "stat_categories": "Categorías",
+    "champion": "Campeón",
+    "runnerup": "Subcampeón",
+    "third": "3er puesto",
+    "place": "Finalista"
+  },
   "footer": {
     "about": "Sobre nosotros",
     "about_text": "Gimnàs Robert, más de 30 años ofreciendo los mejores servicios de entrenamiento en Parets del Vallès.",
