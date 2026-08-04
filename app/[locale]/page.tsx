@@ -38,7 +38,12 @@ export default function HomePage({ params }: { params: Promise<{ locale: Locale 
                 </Button>
               </div>
               <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl">
-                <Image src="/images/logo-gimnas-robert-gimnasio-oficial.png" alt="Gimnàs Robert Facilities" fill className="object-cover" />
+                <Image
+                  src="/images/gallery/sala-musculacion-pesas-discos-barras-gym-robert-parets.avif"
+                  alt={locale === "ca" ? "Sala de musculació del Gimnàs Robert amb peses, discos i barres" : "Sala de musculación del Gimnàs Robert con pesas, discos y barras"}
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

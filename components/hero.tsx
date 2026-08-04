@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar } from "lucide-react"
@@ -14,22 +13,26 @@ export function Hero({ locale, translations }: HeroProps) {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image with Overlay — art direction: dominadas en móvil, remo en escritorio */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/img-0724.avif"
-          alt="Gimnàs Robert Interior"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcSet="/images/hero-dominadas-rack-exterior-gimnas-robert-parets.avif"
+          />
+          <img
+            src="/images/hero-remo-polea-entrenamiento-espalda-gimnas-robert-parets.avif"
+            alt="Entrenament al Gimnàs Robert de Parets del Vallès"
+            fetchPriority="high"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </picture>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40 md:bg-gradient-to-l md:from-black/85 md:via-black/55 md:to-black/20" />
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 z-10 pt-20">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl md:ml-auto">
           <div className="animate-fade-in-up">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">{t.title}</h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 mb-4 font-semibold">{t.subtitle}</p>

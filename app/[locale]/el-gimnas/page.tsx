@@ -52,7 +52,12 @@ export default function AboutPage({ params }: { params: Promise<{ locale: Locale
                 </div>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-                <Image src="/images/logo-gimnas-robert-gimnasio-oficial.png" alt="Historia Gimnàs Robert" fill className="object-cover" />
+                <Image
+                  src="/images/gallery/fachada-edificio-gimnas-robert-parets-dia-soleado.avif"
+                  alt={locale === "ca" ? "Façana del Gimnàs Robert a Parets del Vallès" : "Fachada del Gimnàs Robert en Parets del Vallès"}
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
